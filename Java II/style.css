@@ -1,0 +1,141 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: system-ui, sans-serif;
+  margin: 0;
+  padding: 28px 40px 36px;
+  background: #eef3f7;
+  color: #1a2433;
+}
+
+header .nenitull {
+  margin: 0 0 10px;
+  font-size: 0.95rem;
+  color: #5a6573;
+}
+
+h1 {
+  margin: 0 0 14px;
+  font-size: 2rem;
+  font-weight: 700;
+  color: #0f1b2d;
+}
+
+hr {
+  border: 0;
+  height: 3px;
+  margin: 0 0 20px;
+  background: #116b5d;
+}
+
+nav {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 14px;
+}
+
+nav a {
+  color: #0284c7;
+  font-size: 0.95rem;
+}
+
+.data {
+  margin: 0 0 28px;
+  color: #334155;
+}
+
+.kartat {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 22px;
+  margin-bottom: 48px;
+}
+
+.karte {
+  display: flex;
+  flex-direction: column;
+  background: #fff;
+  border: 1px solid #d5dde7;
+  border-radius: 10px;
+  padding: 22px;
+}
+
+.karte h2 {
+  margin: 0 0 18px;
+  font-size: 1.35rem;
+  font-weight: 700;
+}
+
+.foto {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 200px;
+  margin-bottom: 18px;
+  background: #f1f5f9;
+}
+
+.foto img {
+  width: 140px;
+  height: 140px;
+}
+
+.karte > p {
+  margin: 0 0 22px;
+  text-align: center;
+  color: #334155;
+  font-size: 0.95rem;
+  line-height: 1.4;
+  flex-grow: 1;
+}
+
+details {
+  margin-top: auto;
+  font-size: 0.95rem;
+}
+
+summary {
+  cursor: pointer;
+  list-style: none;
+  color: #1a2433;
+}
+
+summary::-webkit-details-marker {
+  display: none;
+}
+
+summary::before {
+  content: "▶";
+  display: inline-block;
+  margin-right: 8px;
+  font-size: 0.7rem;
+}
+
+details[open] summary::before {
+  content: "▼";
+}
+
+details p {
+  margin: 10px 0 0;
+  color: #334155;
+  font-size: 0.9rem;
+  line-height: 1.45;
+}
+
+footer p {
+  margin: 0;
+  color: #5a6573;
+  font-size: 0.9rem;
+}
+
+@media (max-width: 800px) {
+  body {
+    padding: 20px 16px 28px;
+  }
+
+  .kartat {
+    grid-template-columns: 1fr;
+  }
+}

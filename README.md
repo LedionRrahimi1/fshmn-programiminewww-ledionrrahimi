@@ -1,13 +1,27 @@
 # Programimi në WWW
 
-Dy faqe statike HTML: nje prezantim dhe nje histori e shkurter. Personazhi eshte Ledionii.
+Faqe statike HTML për lëndën Programimi në WWW. Personazhi/shembujt janë të sajuara.
 
-## Pershkrimi
+## Java I
 
-- `Java1/index.html` — titull nje `h1`, prezantim, liste me 3 aftesi dhe lidhje relative te `rreth.html`
-- `Java1/rreth.html` — histori e shkurter dhe lidhje kthimi te `index.html`
+- `Java I/index.html` — titull `h1`, prezantim, listë me 3 aftësi dhe lidhje relative te `rreth.html`
+- `Java I/rreth.html` — histori e shkurtër dhe lidhje kthimi te `index.html`
 
+Hap: `http://localhost:8080/Java%20I/index.html`
 
-Pastaj hap ne shfletues:
+## Java II
 
-`http://localhost:8080/Java1/index.html`
+Muzeu i sendeve: një faqe me tri sende, ikona SVG, navigim me `#` dhe histori të fshehura me `<details>`.
+
+- `Java II/index.html` — struktura e ekspozitës
+- `Java II/style.css` — CSS minimal i lejuar
+- `Java II/celesi.svg`, `filxhani.svg`, `bileta.svg` — ikonat
+- `Java II/README.md` — hyrjet, daljet, rastet dhe mënyra e hapjes
+
+Hap: `http://localhost:8080/Java%20II/index.html`
+
+## Si të niset serveri lokal
+
+```sh
+python -m http.server 8080
+```
