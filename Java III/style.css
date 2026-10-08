@@ -1,0 +1,140 @@
+/* Variablat */
+:root {
+    --ngjyra-tekstit: #17263c;
+    --ngjyra-kryesore: #087f73;
+    --sfondi: #f3f6fa;
+    --bardhe: white;
+
+    --hapesire-e-vogel: 10px;
+    --hapesire: 20px;
+}
+
+/* Box model */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+
+    color: var(--ngjyra-tekstit);
+    background: var(--sfondi);
+}
+
+/* Afisha */
+.poster {
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.poster h1 {
+    font-size: 36px;
+    margin-bottom: 60px;
+}
+
+/* Karta */
+.poster-card {
+    background: var(--bardhe);
+
+    width: 100%;
+    max-width: 760px;
+
+    margin: auto;
+    padding: 35px;
+
+    border: 1px solid #d8e1e8;
+    border-radius: 10px;
+}
+
+/* Etiketat */
+.tags {
+    display: flex;
+    gap: var(--hapesire-e-vogel);
+
+    margin-bottom: 40px;
+
+    flex-wrap: wrap;
+}
+
+.tag {
+    padding: 8px 12px;
+
+    border: 2px solid var(--ngjyra-kryesore);
+    border-radius: 20px;
+
+    background: white;
+}
+
+/* Vende të kufizuara */
+.limited {
+    border-style: dashed;
+    font-weight: bold;
+}
+
+/* Titulli */
+.poster-card h2 {
+    font-size: 28px;
+    margin-bottom: 25px;
+}
+
+/* Data dhe vendi */
+.event-info {
+    margin-bottom: 25px;
+}
+
+/* Butoni */
+.button {
+    display: inline-block;
+
+    background: var(--ngjyra-kryesore);
+    color: white;
+
+    padding: 12px 18px;
+
+    border-radius: 6px;
+
+    font-weight: bold;
+}
+
+/* Hover */
+.button:hover {
+    background: #05665d;
+}
+
+/* Focus */
+.button:focus-visible {
+    outline: 3px solid orange;
+    outline-offset: 3px;
+}
+
+/* Responsive për telefona */
+@media (max-width: 360px) {
+
+    body {
+        padding: 10px;
+    }
+
+    .poster h1 {
+        font-size: 28px;
+        margin-bottom: 30px;
+    }
+
+    .poster-card {
+        padding: 20px;
+    }
+
+    .poster-card h2 {
+        font-size: 22px;
+    }
+
+    .tags {
+        gap: 8px;
+    }
+
+    .tag {
+        font-size: 14px;
+    }
+}
