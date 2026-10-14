@@ -1,0 +1,14 @@
+body {
+  font-family: system-ui;
+  margin: 1rem;
+}
+.cards {
+  width: 900px;
+  overflow:scroll;
+  padding: 2rem;
+  border: 2px solid navy;
+  display: grid;
+}
+a:focus {
+  outline: none;
+}
