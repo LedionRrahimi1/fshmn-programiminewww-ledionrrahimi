@@ -20,6 +20,10 @@ Muzeu i sendeve: një faqe me tri sende, ikona SVG, navigim me `#` dhe histori t
 
 Hap: `http://localhost:8080/Java%20II/index.html`
 
+## Java IV
+
+Festivali shkencor responsive ndodhet te `JavaIV/index.html`. Udhëzimet dhe rezultatet e testeve janë te `JavaIV/README.md`.
+
 ## Si të niset serveri lokal
 
 ```sh
